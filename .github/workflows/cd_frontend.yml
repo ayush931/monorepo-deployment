@@ -24,7 +24,7 @@ jobs:
         with:
           context: .
           file: ./docker/Dockerfile.frontend
-          build-args: |
+          build-args:
             DATABASE_URL=${{ secrets.DATABASE_URL }}
           push: true
           tags: ayush931/todo-app-frontend:${{ github.sha }}
